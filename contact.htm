@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>  
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+</head>
+<body>
+        <div class="border">
+                <ul> 
+                        <li class="nav"><a href="index.htm">Home</a></li>
+                        <li class="nav"><a href="restaurant.htm">Restaurant</a></li>
+                        <li class="nav"><a href="countryculture.htm">Country Culture</a></li>
+                        <li class="nav"><a href="recipes.htm">Magic Recipes</a></li>
+                        <li class="nav"><a href="festivals.htm">festivals</a></li>
+                        <li class="nav"><a href="site-map.htm">Site-Map</a></li>
+                        <li class="nav"><a href="contact.htm">Contact</a></li>
+                      </ul>
+            </div>
+            <h1>Your feedback will be really helpful for us! We appreciate your effort!</h1>
+            
+            <form action="mailto:hma1@babson.edu" method="POST">
+                <div>
+                    First Name:
+                    <input type="text" name="FName" maxlength="15" size="20" placeholder="Please enter your firstname">
+                </div>
+                <div>
+                        Last Name:
+                        <input type="text" name="LName" maxlength="30" size="20" placeholder="Please enter your lastname">
+                </div>
+                <div>
+                        Gender: Male <input type="radio" name="gender" value="m">
+                        Female <input type="radio" name="gender" checked="checked">
+                        Secret <input type="radio" name="gender" value="na">
+                </div>
+                <div>
+                    Age: (under 25 enter 1, 25-40 enter 2, else enter 3) <input type="text" name="age" maxlength="3" class="box" id="namebox">
+                </div>
+                <div>
+                        <h4>
+                            Choose your favorite cuisine?
+                        </h4>
+                        <p>
+                            <input type="checkbox" name="cuisine" value="Shanghai Cuisine"> Shanghai Cuisine <br>
+                            <input type="checkbox" name="cuisine" value="Dim Sum"> Dim Sum <br>
+                            <input type="checkbox" name="cuisine" value="Sichuan Cuisine"> Sichuan Cuisine <br>
+                            <input type="checkbox" name="cuisine" value="Shanxi Cuisine"> Shanxi Cuisine <br>
+                            <input type="checkbox" name="cuisine" value="Dongbei Cuisine"> Dongbei Cuisine
+                        </p>
+                    </div>
+                
+        <div>
+
+                        <button type="submit" name="submit" value="submit">
+                            SUBMIT<img src="images/mailbox.png" height="30" title="submit_button" alt="submit_button"/></button>
+                        <button type="reset" name="reset" value="reset">
+                            CLEAR<img src="images/reset.png" height="30"title="reset_button" alt="reset_button"/>
+                        </button>
+                    
+
+
+            </div>
+            </form>
+</body>
+</html>
