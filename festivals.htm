@@ -2,25 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Know more about history of Chinese food and learn how to cook Chinese Cuisine using the recipes provided by the website.">
+    <meta name="keywords" content="Chinese, Food, Recipes, ">
+    <meta name="author" content="Huifang/Cathy Ma">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coupon</title>
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+
+    </style>
+    <script>
+    function change() {
+      let h=document.getElementById("hh")
+      let pic=document.getElementById("picture")
+      hh.innerHTML= "It is time to eat mooncake!"
+      pic.src="images/mooncake.jpg"
+    }
+    </script>
 </head>
 <body>
-        <div class="border">
-                                       <ul> 
-                                <li class="nav"><a href="index.htm">Home</a></li>
-                                <li class="nav"><a href="restaurant.htm">Restaurant</a></li>
-                                <li class="nav"><a href="countryculture.htm">Country Culture</a></li>
-                                <li class="nav"><a href="recipes.htm">Magic Recipes</a></li>
-                                <li class="nav"><a href="festivals.htm">festivals</a></li>
-                                <li class="nav"><a href="site-map.htm">Site-Map</a></li>
-                                <li class="nav"><a href="contact.htm">Contact</a></li>
-                              </ul>
-            </div>
-            <h1>Mid-Autumn Festival</h1>
-           <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/09/24/12/mid-autumn-festival.jpg?w968h681" alt="here is an image of mid-autumn festival" title="mid-autumn-festival">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ca0918;">
+        <!-- <a class="navbar-brand" href="#"></a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.htm">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="restaurant.htm">Restaurant</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="countryculture.htm">Country Culture</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="recipes.htm">Magic Receipes</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="festivals.htm">Festivals</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="site-map.htm">Site-Map</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.htm">Contact</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="credit.htm">Credits</a>
+                    </li>
+            </ul>
+        </div>
+    </nav><div class="bd">
+            <h1 id="hh">Mid-Autumn Festival</h1>
+           <img id="picture" onclick="change()" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/09/24/12/mid-autumn-festival.jpg?w968h681" alt="here is an image of mid-autumn festival" title="click to see change!">
            <p>
              <h3>What is the Mid-Autumn Festival?</h3> 
 
@@ -42,5 +82,5 @@
               Celebrations for mid-autumn take place across East Asia, in countries including China, Taiwan, Japan, Singapore, South Korea, Malaysia, Vietnam and the Philippines. 
               
               However, families across the world observe the holiday by gathering for dinners. </p>
-</body>
+</div></body>
 </html>
