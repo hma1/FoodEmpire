@@ -2,26 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Know more about history of Chinese food and learn how to cook Chinese Cuisine using the recipes provided by the website.">
+    <meta name="keywords" content="Chinese, Food, Recipes, ">
+    <meta name="author" content="Huifang/Cathy Ma">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>  
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+    form{
+        text-align: center;
+    }
+    </style>
+<script>
+    function display() {
+    let myForm=document.getElementById("form1")
+    let firstName=myForm.FName.value
+    let lastName=myForm.LName.value
+    let age=myForm.age.value
+    let gender=myForm.gender.value
+    let c=myForm.cuisine.value
+   
+    myForm.result.value= firstName + " " + lastName + " "+ age + " " + gender +" "+c;
+     if(firstName.length==0||lastName.length==0||age.length==0){
+        alert("Please finish the form first!")
+     }
+    return false;
+   }
+
+</script>
 </head>
 <body>
-        <div class="border">
-                <ul> 
-                        <li class="nav"><a href="index.htm">Home</a></li>
-                        <li class="nav"><a href="restaurant.htm">Restaurant</a></li>
-                        <li class="nav"><a href="countryculture.htm">Country Culture</a></li>
-                        <li class="nav"><a href="recipes.htm">Magic Recipes</a></li>
-                        <li class="nav"><a href="festivals.htm">festivals</a></li>
-                        <li class="nav"><a href="site-map.htm">Site-Map</a></li>
-                        <li class="nav"><a href="contact.htm">Contact</a></li>
-                      </ul>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ca0918;">
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.htm">Home </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="restaurant.htm">Restaurant</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="countryculture.htm">Country Culture</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="recipes.htm">Magic Receipes</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="festivals.htm">Festivals</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="site-map.htm">Site-Map</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.htm">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                                <a class="nav-link" href="credit.htm">Credits</a>
+                            </li>
+                    </ul>
+                </div>
+            </nav>
             <h1>Your feedback will be really helpful for us! We appreciate your effort!</h1>
             
-            <form action="mailto:hma1@babson.edu" method="POST">
+            <form action="mailto:hma1@babson.edu" method="POST" id="form1">
                 <div>
                     First Name:
                     <input type="text" name="FName" maxlength="15" size="20" placeholder="Please enter your firstname">
@@ -31,9 +82,7 @@
                         <input type="text" name="LName" maxlength="30" size="20" placeholder="Please enter your lastname">
                 </div>
                 <div>
-                        Gender: Male <input type="radio" name="gender" value="m">
-                        Female <input type="radio" name="gender" checked="checked">
-                        Secret <input type="radio" name="gender" value="na">
+                        Gender: Male <input type="text" name="gender" maxlength="30" size="20" placeholder="Please enter your lastname">
                 </div>
                 <div>
                     Age: (under 25 enter 1, 25-40 enter 2, else enter 3) <input type="text" name="age" maxlength="3" class="box" id="namebox">
@@ -49,11 +98,15 @@
                             <input type="checkbox" name="cuisine" value="Shanxi Cuisine"> Shanxi Cuisine <br>
                             <input type="checkbox" name="cuisine" value="Dongbei Cuisine"> Dongbei Cuisine
                         </p>
+                        <p>
+                                <label>Your results will appear here:</label>
+                                <textarea cols="40" name="result" rows="3"></textarea>
+                            </p>
                     </div>
                 
         <div>
 
-                        <button type="submit" name="submit" value="submit">
+                        <button onclick="return display()" type="submit" name="submit" value="submit">
                             SUBMIT<img src="images/mailbox.png" height="30" title="submit_button" alt="submit_button"/></button>
                         <button type="reset" name="reset" value="reset">
                             CLEAR<img src="images/reset.png" height="30"title="reset_button" alt="reset_button"/>
